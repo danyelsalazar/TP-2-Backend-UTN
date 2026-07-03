@@ -117,7 +117,7 @@ Para utilizarlo:
         ```json
         {
           "descripcion": "Hola a todos dejo info de base de datos II",
-          "materia": "6a2b1d33abebca29ffc4eacc",
+          "materia": "IDdemateriavalido",
           "tipo": "APORTE"
         }
         ```
@@ -127,7 +127,7 @@ Para utilizarlo:
     *   **URL:** `http://localhost:3005/api/user/publications?tipo=APORTE&materia=base de datos II&page=1&limit=5`
     *   **Headers:** `Authorization: Bearer <JWT_TOKEN>`
 
-### 4. Módulo de Materias / Subjects (Privados - Rol ADMIN)
+### 4. Módulo de Materias / Subjects (Privados - Rol ADMIN) importante ya que si no existen materias registradas no puedo agregarle materias al usuario
 *   **Creación de Materias**
     *   **Método:** `POST`
     *   **URL:** `http://localhost:3005/api/subject`
@@ -148,11 +148,11 @@ Para utilizarlo:
 
 *   **Modificar Rol o Datos de un Usuario por ID (PATCH)**
     *   **Método:** `PATCH`
-    *   **URL:** `http://localhost:3005/api/admin/6a2b1d33abebca29ffc4e111`
+    *   **URL:** `http://localhost:3005/api/admin/users/6a4327a141e019d1ffb00101`
     *   **Headers:** `Authorization: Bearer <ADMIN_JWT_TOKEN>`
     *   **Body (JSON):** `{"role": "ADMIN"}`
 
 *   **Eliminar Cualquier Usuario por ID**
     *   **Método:** `DELETE`
-    *   **URL:** `http://localhost:3005/api/admin/6a2b1d33abebca29ffc4e222`
+    *   **URL:** `http://localhost:3005/api/admin/users/6a4327a141e019d1ffb00101`
     *   **Headers:** `Authorization: Bearer <ADMIN_JWT_TOKEN>`
