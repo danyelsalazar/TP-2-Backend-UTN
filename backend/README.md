@@ -59,7 +59,7 @@ Para utilizarlo:
 ### 1. Módulo de Autenticación (Rutas Públicas)
 *   **Registro de Usuario**
     *   **Método:** `POST`
-    *   **URL:** `http://localhost:3005/api/register`
+    *   **URL:** `http://localhost:3005/api/auth/register`
     *   **Body (JSON):**
         ```json
         {
@@ -71,7 +71,7 @@ Para utilizarlo:
         ```
 *   **Inicio de Sesión (Login)**
     *   **Método:** `POST`
-    *   **URL:** `http://localhost:3005/api/login`
+    *   **URL:** `http://localhost:3005/api/auth/login`
     *   **Body (JSON):** Retorna el token JWT necesario para las rutas privadas.
         ```json
         {
