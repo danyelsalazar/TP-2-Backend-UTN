@@ -90,13 +90,13 @@ Para utilizarlo:
     *   **Método:** `PATCH`
     *   **URL:** `http://localhost:3005/api/user`
     *   **Headers:** `Authorization: Bearer <JWT_TOKEN>`
-    *   **Body (JSON):** `{"nombre": "Danyel Modificado"}`
+    *   **Body (JSON):** `{"nombre": "Danyel Alejandro Salazar Aarcon","materias": ["6a2b1d33abebca29ffc4eacc"]}`
 
 *   **Inyectar Materia al Alumno (Sin Duplicados)**
-    *   **Método:** `POST`
-    *   **URL:** `http://localhost:3005/api/user/materia`
+    *   **Método:** `PATCH`
+    *   **URL:** `http://localhost:3005/api/user`
     *   **Headers:** `Authorization: Bearer <JWT_TOKEN>`
-    *   **Body (JSON):** `{"idMateria": "6a2b1d33abebca29ffc4eacc"}`
+    *   **Body (JSON):** `{"materias": ["6a2b1d33abebca29ffc4eacc"]}`
 
 *   **Listar Mis Materias (Pobladas con Datos Reales)**
     *   **Método:** `GET`
