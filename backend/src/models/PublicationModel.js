@@ -12,15 +12,15 @@ const publicationSchema = new Schema(
       ref: "Subject",
     },
     publicador: {
-      type: mongoose.Schema.Types.ObjectId, // Guarda el ID del usuario
-      ref: "User", // nombre del modelo al que hace referencia
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "User", 
       required: [true, "Es requerido el publicador"],
     },
     likers: {
       type: [
         {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Usuario",
+          ref: "User",
         },
       ],
       default: [],
