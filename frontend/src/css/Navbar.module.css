@@ -1,0 +1,82 @@
+/* Barra de navegacion con menu segun rol */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+/* Enlace exclusivo del admin, resaltado */
+.adminLink {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.adminLink:hover {
+  color: #fcd34d;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+.badgeAdmin {
+  background: #422006;
+  color: #fbbf24;
+}
+
+.logout {
+  border: 1px solid #334155;
+  background: transparent;
+  color: #e2e8f0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.logout:hover {
+  background: #1e293b;
+}
